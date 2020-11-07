@@ -8,5 +8,5 @@
 
 |	Library 	| Description 	|
 |:---	|:---	|
-| <img src="https://github.com/marshallcb/jeye/raw/main/jeye.png" width="32" height="32"> [`jeye`](https://github.com/marshallcb/jeye) 	| File watcher that also watches dependencies 	|
-| <img src="https://github.com/marshallcb/hueman/raw/master/hueman.png" width="32" height="32"> [`hueman`](https://github.com/marshallcb/hueman) 	| Perception-based HSL color space	|
+| <img src="https://github.com/marshallcb/jeye/raw/main/jeye.png" width="32" height="32">   | [`jeye`](https://github.com/marshallcb/jeye) 	| File watcher that also watches dependencies 	|
+| <img src="https://github.com/marshallcb/hueman/raw/master/hueman.png" width="32" height="32">   | [`hueman`](https://github.com/marshallcb/hueman) 	| Perception-based HSL color space	|
