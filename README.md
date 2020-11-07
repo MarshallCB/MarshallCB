@@ -7,5 +7,5 @@
 - [`ctex`](https://github.com/MarshallCB/ctex): Observable object state management
 
 |	| Library 	| Description 	|
-|-	|-	|-	|
+|:---	|:---	|:---	|
 | <img src="https://github.com/marshallcb/jeye/raw/main/jeye.png" width="50" height="50"> 	| [`jeye`](https://github.com/marshallcb/jeye) 	| File watcher that also watches dependencies 	|
