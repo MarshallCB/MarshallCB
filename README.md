@@ -1,8 +1,8 @@
 ## My Website: [m4r.sh](https://m4r.sh)
 
-|	Library 	| Description 	| Badges  |
-|:---:|:---	|:--- |
-| <img src="https://github.com/marshallcb/routo/raw/master/routo.png" width="40" height="40"><br/><br/>[`routo`](https://github.com/marshallcb/routo)| Bundle-less script + file builder<br/><br/><img src="https://badgen.now.sh/npm/v/routo" alt="version" /> 	|  |
+|	Library 	| Description  |
+|:---:|:---	|
+| <img src="https://github.com/marshallcb/routo/raw/master/routo.png" width="40" height="40"><br/>[`routo`](https://github.com/marshallcb/routo)| Bundle-less script + file builder<br/><br/><img src="https://badgen.now.sh/npm/v/routo" alt="version" /> 	|
 | <img src="https://github.com/marshallcb/hueman/raw/master/hueman.png" width="40" height="40">   | [`hueman`](https://github.com/marshallcb/hueman) 	| Perception-based HSL color space	|  <img src="https://badgen.now.sh/npm/v/hueman" alt="version" /><br/><img src="https://img.badgesize.io/MarshallCB/hueman/master/es.js?compression=brotli" alt="install size" /> |
 | <img src="https://github.com/marshallcb/themepark/raw/master/themepark.png" width="40" height="40">   | [`themepark`](https://github.com/marshallcb/themepark) 	| Reactive CSS Variables	|  <img src="https://badgen.now.sh/npm/v/themepark" alt="version" /><br/><img src="https://img.badgesize.io/MarshallCB/themepark/master/es.js?compression=brotli" alt="install size" /> |
 | <img src="https://github.com/marshallcb/ctex/raw/main/ctex.png" width="40" height="40">   | [`ctex`](https://github.com/marshallcb/ctex) 	| Observable Objects for state management	|  <img src="https://badgen.now.sh/npm/v/ctex" alt="version" /><br/><img src="https://img.badgesize.io/MarshallCB/ctex/main/es.js?compression=brotli" alt="install size" /> |
