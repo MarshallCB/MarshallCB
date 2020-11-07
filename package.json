@@ -1,0 +1,20 @@
+{
+  "version": "0.0.1",
+  "name": "marshallcb",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarshallCB/MarshallCB.git"
+  },
+  "description": "GitHub profile readme",
+  "license": "MIT",
+  "author": {
+    "name": "Marshall Brandt",
+    "email": "hey@m4r.sh",
+    "url": "https://m4r.sh"
+  },
+  "scripts": {
+    "build": "node generate",
+    "upload": "git add . && git commit -m 'update readme' && git push -u origin main",
+    "update": "npm run build && npm run upload"
+  }
+}
