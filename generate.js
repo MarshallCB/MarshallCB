@@ -18,7 +18,7 @@ function LibraryTable(libraries){
     let repo = repository.url.replace('git+','').replace('.git','')
     let repo_id = repo.replace("https://github.com/","")
     console.log(repo_id)
-    m += `| <a href="${repo}"><img src="${repo}/raw/main/${name}.png" width="40" height="40"></a><br/>[\`${name}\`](${repo})| ${description}<br/><br/><a href="https://npmjs.com/package/${name}"><img src="https://badgen.now.sh/npm/v/${name}" alt="version" /></a>&nbsp;${badges.map( type => Badge[type](name) )} 	|\n`
+    m += `| <a href="${repo}"><img src="${repo}/raw/main/${name}.png" width="40" height="40"></a><br/>[\`${name}\`](${repo})| ${description}<br/><br/>${badges.map( type => Badge[type](name) )} 	|\n`
   })
   return m;
 }
