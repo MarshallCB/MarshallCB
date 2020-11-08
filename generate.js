@@ -8,7 +8,7 @@ function Header(){
 
 let Badge = {
   install: (lib) => `<a href="https://packagephobia.com/result?p=${lib}"><img src="https://badgen.net/packagephobia/install/${lib}" alt="install size" /></a>`,
-  brotli: (lib) => `<a href="https://bundlephobia.com/result?p=${lib}"><img src="https://img.badgesize.io/MarshallCB/${lib}/main/es.js?compression=brotli" alt="brotli size" /></a>`
+  brotli: (lib) => `<a href="https://bundlephobia.com/result?p=${lib}"><img src="https://badgen.net/badgesize/brotli/MarshallCB/${lib}/main/es.js?compression=brotli" alt="brotli size" /></a>`
 }
 
 function LibraryTable(libraries){
