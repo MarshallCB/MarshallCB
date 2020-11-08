@@ -6,19 +6,48 @@ function Header(){
   return m;
 }
 
+let Badge = {
+  install: (lib) => `<a href="https://packagephobia.com/result?p=${lib}"><img src="https://badgen.net/packagephobia/install/${lib}" alt="install size" /></a>`,
+  brotli: (lib) => `<a href="https://bundlephobia.com/result?p=${lib}"><img src="https://img.badgesize.io/MarshallCB/${lib}/main/es.js?compression=brotli" alt="brotli size" /></a>`
+}
+
 function LibraryTable(libraries){
   let m = `|  Library 	| Description  |\n|:---:|:---	|\n`;
-  libraries.forEach(lib => {
-    let { description, repository } = require(`../${lib}/package.json`)
+  libraries.forEach(({ name, badges }) => {
+    let { description, repository } = require(`../${name}/package.json`)
     let repo = repository.url.replace('git+','').replace('.git','')
-    m += `| <a href="${repo}"><img src="${repo}/raw/main/${lib}.png" width="40" height="40"></a><br/>[\`${lib}\`](${repo})| ${description}<br/><br/><img src="https://badgen.now.sh/npm/v/${lib}" alt="version" /> 	|\n`
+    let repo_id = repo.replace("https://github.com/","")
+    console.log(repo_id)
+    m += `| <a href="${repo}"><img src="${repo}/raw/main/${name}.png" width="40" height="40"></a><br/>[\`${name}\`](${repo})| ${description}<br/><br/><a href="https://npmjs.com/package/${name}"><img src="https://badgen.now.sh/npm/v/${name}" alt="version" /></a>&nbsp;${badges.map( type => Badge[type](name) )} 	|\n`
   })
   return m;
 }
 
 
+
 md += Header()
-md += LibraryTable(["routo", "hueman", "ctex", "themepark", "jeye"])
+md += LibraryTable([
+  {
+    name: "routo",
+    badges: ['install']
+  },
+  {
+    name: "hueman",
+    badges: ['brotli']
+  },
+  {
+    name: "ctex",
+    badges: ['brotli']
+  },
+  {
+    name: "themepark",
+    badges: ['brotli']
+  },
+  {
+    name: "jeye",
+    badges: ['install']
+  }
+])
 
 fs.writeFileSync('./README.md', md)
 console.log("Done")
