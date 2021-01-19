@@ -36,7 +36,7 @@ md += LibraryTable([
     badges: ['brotli']
   },
   {
-    name: "ctex",
+    name: "dotz",
     badges: ['brotli']
   },
   {
